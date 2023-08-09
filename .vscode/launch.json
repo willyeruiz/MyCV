@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+
+ 
+      
+    "configurations": [
+        {
+            "name": "Launch MyCV.API",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/MyCV.API/bin/Debug/net6.0/MyCV.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/MyCV.API",
+            "console": "internalConsole",
+            "preLaunchTask": "build MyCV.API",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    ]
+}

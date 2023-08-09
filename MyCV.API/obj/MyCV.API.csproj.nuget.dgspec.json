@@ -26,7 +26,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj": {
+                "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj"
+              },
+              "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj": {
+                "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +66,199 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj",
+        "projectName": "MyCV.Application",
+        "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj",
+        "packagesPath": "/Users/williamruiz/.nuget/packages/",
+        "outputPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/williamruiz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj": {
+                "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj",
+        "projectName": "MyCV.Domain",
+        "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj",
+        "packagesPath": "/Users/williamruiz/.nuget/packages/",
+        "outputPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/williamruiz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj",
+        "projectName": "MyCV.Infrastructure",
+        "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj",
+        "packagesPath": "/Users/williamruiz/.nuget/packages/",
+        "outputPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/williamruiz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj": {
+                "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Application/MyCV.Application.csproj"
+              },
+              "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj": {
+                "projectPath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/MyCV.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

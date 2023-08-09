@@ -1,0 +1,12 @@
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/bin/Debug/net6.0/MyCV.Domain.deps.json
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/bin/Debug/net6.0/MyCV.Domain.dll
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/bin/Debug/net6.0/MyCV.Domain.pdb
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.csproj.AssemblyReference.cache
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.AssemblyInfoInputs.cache
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.AssemblyInfo.cs
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.csproj.CoreCompileInputs.cache
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.dll
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/refint/MyCV.Domain.dll
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/MyCV.Domain.pdb
+/Users/williamruiz/MyCVProject/MyCV/MyCV.Domain/obj/Debug/net6.0/ref/MyCV.Domain.dll
