@@ -2,9 +2,7 @@ using MyCV.Domain.Common.Primitives;
 using MyCV.Domain.Identificators;
 
 namespace MyCV.Domain.Entities{
-
-
-
+    
     public sealed class Experience : AggregateRoot
     {   
         public Experience(){}
