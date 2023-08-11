@@ -1,11 +1,12 @@
+using MyCV.API;
+using MyCV.Infrastructure;
+using MyCV.Application;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddPresentation()
+				.AddInfrastructure(builder.Configuration)
+				.AddApplication();
 
 var app = builder.Build();
 
@@ -15,6 +16,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 	app.UseSwagger();
 	app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyCV.Api v1"));
+	//For now I will work witoout DataBase, uncomment this line to create DataBase
+	//app.ApplyMigrations(); 
 }
 
 app.UseHttpsRedirection();
