@@ -1,3 +1,4 @@
+using ErrorOr;
 using MediatR;
 
 namespace MyCV.Application.Experiences.Create
@@ -8,6 +9,6 @@ namespace MyCV.Application.Experiences.Create
        string To, 
        string Position, 
        string Description
-    ) : IRequest<Unit>;
+    ) : IRequest<ErrorOr<Unit>>;
   
 }

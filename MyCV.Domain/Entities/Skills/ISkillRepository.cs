@@ -5,15 +5,15 @@ namespace MyCV.Domain.Repositories
 {
     public interface ISkillRepository
     {
-        Task<Skill> GetAllAsync(SkillId id);
+        Task<IEnumerable<Skill>?> GetAllAsync();
 
-        Task<Skill> GetByIdAsync(SkillId id);
+        Task<Skill?> GetByIdAsync(SkillId id);
         
-        Task<Skill> AddAsync(Skill skill);
+        Task AddAsync(Skill skill);
 
-        Task<Skill> UpdateAsync(Skill skill);
+        // Task<Skill> UpdateAsync(Skill skill);
 
-        Task<bool> DeleteAsync(Skill skill);
+        // Task<bool> DeleteAsync(Skill skill);
     }
 }
 

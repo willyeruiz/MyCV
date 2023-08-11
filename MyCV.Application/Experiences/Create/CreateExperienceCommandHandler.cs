@@ -4,10 +4,11 @@ using MyCV.Domain.Common.Primitives;
 using MyCV.Domain.Identificators;
 using MyCV.Domain.Repositories;
 using MyCV.Domain.Entities;
+using ErrorOr;
 
 namespace MyCV.Application.Experiences.Create;
 
-    internal sealed class CreateExperienceCommandHandler : IRequestHandler<CreateExperienceCommand, Unit>
+    internal sealed class CreateExperienceCommandHandler : IRequestHandler<CreateExperienceCommand, ErrorOr<Unit>>
     {
         private readonly IExperienceRepository _ExperienceRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -18,19 +19,26 @@ namespace MyCV.Application.Experiences.Create;
             _unitOfWork = unitOfWork ?? throw new System.ArgumentNullException(nameof(unitOfWork));
         }
 
-        public async Task<Unit> Handle(CreateExperienceCommand request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<Unit>> Handle(CreateExperienceCommand request, CancellationToken cancellationToken)
         {
-            
-          var newExperience = new Experience(new ExperienceId(Guid.NewGuid()),
+            try
+            {
+                var newExperience = new Experience(new ExperienceId(Guid.NewGuid()),
                                               request.Company,
                                               request.From,
                                               request.To,
                                               request.Position,
                                               request.Description);
 
-           await _ExperienceRepository.AddAsync(newExperience);     
-           await _unitOfWork.SaveChangesAsync(cancellationToken);
-           return Unit.Value;
+                await _ExperienceRepository.AddAsync(newExperience);     
+                await _unitOfWork.SaveChangesAsync(cancellationToken);
+                return Unit.Value;
+            }
+            catch (Exception e)
+            {
+               return Error.Failure("Error while creating new Experience");
+            }
+       
         }
 
   

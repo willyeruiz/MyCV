@@ -24,6 +24,7 @@ if (app.Environment.IsDevelopment())
 	 //dotnet ef database update -p MyCV.Infrastructure -s MyCV.API
 }
 
+app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();

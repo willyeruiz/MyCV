@@ -21,7 +21,8 @@ namespace MyCV.Infrastructure
             services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("SqlServerDataBase")));    
             services.AddScoped<IApplicationDBContext>(provider => provider.GetRequiredService<ApplicationDBContext>());
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDBContext>());
-            services.AddScoped<IExperienceRepository, ExperienceRepository>();
+            services.AddScoped<IExperienceRepository, ExperienceJson>();
+            services.AddScoped<ISkillRepository, SkillJson>();
             return services;
         }
     }

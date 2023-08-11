@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "l6S+hnk9X7y3YY3ak5QOkg5skrctIIoaqIslnyutCkV21kc92XAkHNIknHyrY5NpPbkuR/ih60BLIR3UOquYJw==",
+  "dgSpecHash": "QroGY/SFWduXYpa/HXlaELF/D6mW1NlbSItXMLWAeOBK1z+Jj7WTSjyYqme4KkZ44d0jLDIFk1ILMtCOw3BVwg==",
   "success": true,
   "projectFilePath": "/Users/williamruiz/MyCVProject/MyCV/MyCV.Infrastructure/MyCV.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/williamruiz/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/williamruiz/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/williamruiz/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512",
     "/Users/williamruiz/.nuget/packages/fluentvalidation/11.6.0/fluentvalidation.11.6.0.nupkg.sha512",
     "/Users/williamruiz/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/williamruiz/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",

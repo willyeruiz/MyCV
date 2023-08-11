@@ -9,8 +9,7 @@ namespace MyCV.Infrastructure.Persistence.Configuration
     {
         public void Configure(EntityTypeBuilder<Experience> builder)
         {
-            //builder.("Experiences");
-            
+            builder.ToTable ("Experiences");
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Id).HasConversion(
                 ExperienceId => ExperienceId.value,value => new ExperienceId(value)

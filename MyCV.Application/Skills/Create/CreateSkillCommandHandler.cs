@@ -1,4 +1,5 @@
 
+using ErrorOr;
 using MediatR;
 using MyCV.Domain.Common.Primitives;
 using MyCV.Domain.Entities;
@@ -7,7 +8,7 @@ using MyCV.Domain.Repositories;
 
 namespace MyCV.Application.Skills.Create
 {
-    internal sealed class CreateSkillCommandHandler : IRequestHandler<CreateSkillCommand, Unit>
+    internal sealed class CreateSkillCommandHandler : IRequestHandler<CreateSkillCommand, ErrorOr<Unit>>
     {
         private readonly ISkillRepository _SkillRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -17,19 +18,26 @@ namespace MyCV.Application.Skills.Create
             _SkillRepository = SkillRepository ?? throw new System.ArgumentNullException(nameof(SkillRepository));
             _unitOfWork = unitOfWork ?? throw new System.ArgumentNullException(nameof(unitOfWork));
         }
-        public async Task<Unit> Handle(CreateSkillCommand request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<Unit>> Handle(CreateSkillCommand request, CancellationToken cancellationToken)
         {
-          var newSkill =  new Skill( 
-                                        new SkillId(Guid.NewGuid()), 
-                                        request.name, 
-                                        request.level, 
-                                        request.type, 
-                                        request.percentage
-                                    );
+            try
+            {
+                var newSkill =  new Skill( 
+                                new SkillId(Guid.NewGuid()), 
+                                request.name, 
+                                request.level, 
+                                request.type, 
+                                request.percentage
+                            );
            
-           await _SkillRepository.AddAsync(newSkill);     
-           await _unitOfWork.SaveChangesAsync(cancellationToken);
-           return Unit.Value;
+                await _SkillRepository.AddAsync(newSkill);     
+                await _unitOfWork.SaveChangesAsync(cancellationToken);
+                return Unit.Value;
+            }
+            catch (System.Exception)
+            {
+                 return Error.Failure("Error while creating new Skill");
+            }  
         }
     }
 }

@@ -11,6 +11,7 @@ using MyCV.Application.Experiences.Create;
 namespace MyCV.API.Controllers
 {
     
+    [Route("api/[controller]")]
     public class ExperiencesController : ApiController
     {
         private readonly ISender _mediator;
