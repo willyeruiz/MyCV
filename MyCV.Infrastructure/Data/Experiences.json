@@ -1,0 +1,51 @@
+[
+    {   
+        "id":{ "value":"asd324dasd"},    
+        "company": "SONDA DE COLOMBIA",
+        "from": "Abril 2010",
+        "to": "Diciembre 2012",
+        "position": "Desarrollador Jr.",
+        "description": "Análisis, diseño, implementación y mantenimiento aplicaciones web y de escritorio Desarrollo de informes utilizando Crystal Reports y Report viewver"
+    },
+    {   
+        "id":{ "value":"asd53523dasd"},
+        "company": "BANCO FALABELLA",
+        "from": "Diciembre 2012",
+        "to": "Enero 2017",
+        "position": "Desarrollador Sr.",
+        "description": "Líder de proyecto en migración a nuevas tecnologías en el Core bancario. Desarrollo de aplicaciones web con equipos multidisciplinarios entre diferentes países de América latina Uso de tecnologías Microsoft ASP.Net, AJAX, Html5, Javascript, CSS, JQuery, SQL Server"
+    },
+    {   
+        "id":{ "value":"asdda56456sd"},
+        "company": "Fundación Universitaria de Popayán",
+        "from": "Enero 2017",
+        "to": "Diciembre 2018",
+        "position": "Subdirector del programa de Ingeniería de Sistemas",
+        "description": "Miembro del comité de Autoevaluación para lograr la acreditación de alta calidad del programa. Diseño de estrategias para alcanzar los objetivos propuestos desde el comité de Autoevaluación"
+        
+    },
+    {   
+        "id":{ "value":"asd233343454dasd"},
+        "company": "FREELANCER",
+        "from": "Septiembre 2018",
+        "to": "Marzo 2019",
+        "position": "Desarrollador Sr.",
+        "description": "Implementación de una aplicación web para Wilfrios, una empresa que brinda servicios de mantenimiento para equipos de refrigeración industrial. Aplicación desarrollada utilizando Angular 4, NodeJS y MongoDB y servicios REST."
+    },
+    {   
+        "id":{ "value":"asd456454dasd"},
+        "company": "AMADEUS",
+        "from": "Abril 2019",
+        "to": "Junio 2020",
+        "position": "Consultor TI",
+        "description": "Construcción de nuevas funcionalidades y mantenimiento de aplicaciones web para reservas aéreas y hoteleras. Desarrolladas en tecnologías Microsoft, MVC, REST API. Uso  de Git y Octopus para Integración continua and despliegue continuo. Uso de methodologies agile de desarrollo SCRUM"
+    },
+    {   
+        "id":{ "value":"as4564564ddasd"},
+        "company": "Ditech",
+        "from": "Julio 2020",
+        "to": "Actualmente",
+        "position": "Consultor TI",
+        "description": "Construcción de nuevas funcionalidades y mantenimiento de aplicación web para toda la cadena de producción del sector alimenticio. Proyecto Grupo Jorge (España). Uso de tecnologías Microsoft ASP.Net, AJAX, Html5, Javascript, CSS, JQuery, SQL Server"
+    }
+]
