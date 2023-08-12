@@ -1,6 +1,7 @@
 using MyCV.API;
 using MyCV.Infrastructure;
 using MyCV.Application;
+using MyCV.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,8 @@ app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
 app.UseEndpoints(endpoints =>
 {

@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MyCV.API.Middlewares;
 
 namespace MyCV.API
 {
@@ -15,7 +12,7 @@ namespace MyCV.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
-            
+            services.AddTransient<GlobalExceptionHandlingMiddleware>();
             return services;
         }
 

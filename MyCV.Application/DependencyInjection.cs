@@ -14,6 +14,11 @@ namespace MyCV.Application{
                 config.RegisterServicesFromAssemblyContaining<ApplicationAssemblyReference>();
             });
              
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(Common.Behaviours.ValidationBehaviours<,>)
+            );
+
             services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyReference>();
 
             return services;
