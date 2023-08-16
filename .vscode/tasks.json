@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MyCV.API/MyCV.API.csproj",
+                "${workspaceFolder}/src/MyCV.API/MyCV.API.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -21,7 +21,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/MyCV.API/MyCV.API.csproj",
+                "${workspaceFolder}/src/MyCV.API/MyCV.API.csproj",
             ],
             "problemMatcher": "$msCompile"
         }

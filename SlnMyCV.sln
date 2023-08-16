@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Domain", "src\MyCV.Domain\MyCV.Domain.csproj", "{BFAF0D85-DB7E-4618-B677-A1FB74FD01BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Domain", "src/MyCV.Domain/MyCV.Domain.csproj", "{BFAF0D85-DB7E-4618-B677-A1FB74FD01BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Infrastructure", "src\MyCV.Infrastructure\MyCV.Infrastructure.csproj", "{0BE08E94-8A4B-4364-8579-7CC5C99C1CAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Infrastructure", "src/MyCV.Infrastructure/MyCV.Infrastructure.csproj", "{0BE08E94-8A4B-4364-8579-7CC5C99C1CAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Application", "src\MyCV.Application\MyCV.Application.csproj", "{F387EE24-4085-4F46-8CBC-CDA7796C74BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Application", "src/MyCV.Application/MyCV.Application.csproj", "{F387EE24-4085-4F46-8CBC-CDA7796C74BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E5ADF57-02A7-4F29-98C3-A9BC1889F0B0}"
 EndProject
@@ -19,13 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CFBC2F28-F04E-4AA9-B993-9751B32D1504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.API", "src\MyCV.API\MyCV.API.csproj", "{7C5C03F2-5F32-4FC3-84D1-A9492CDF3876}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.API", "src/MyCV.API/MyCV.API.csproj", "{7C5C03F2-5F32-4FC3-84D1-A9492CDF3876}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1C7BCC03-A7F0-4B24-851B-C68F21968283}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{92C699EF-0D9B-48D5-86A5-D64E57941579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Experiences.UnitTest", "test\UnitTest\MyCV.Experiences.UnitTest\MyCV.Experiences.UnitTest.csproj", "{A9D019D9-F37B-49F1-83CC-65B1A032452E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Experiences.UnitTest", "test/UnitTest/MyCV.Experiences.UnitTest/MyCV.Experiences.UnitTest.csproj", "{A9D019D9-F37B-49F1-83CC-65B1A032452E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
