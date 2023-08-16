@@ -11,9 +11,9 @@
             "name": "Launch MyCV.API",
             "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceFolder}/MyCV.API/bin/Debug/net6.0/MyCV.API.dll",
+            "program": "${workspaceFolder}/src/MyCV.API/bin/Debug/net6.0/MyCV.API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/MyCV.API",
+            "cwd": "${workspaceFolder}/src/MyCV.API",
             "console": "internalConsole",
             "preLaunchTask": "build MyCV.API",
             "env": {

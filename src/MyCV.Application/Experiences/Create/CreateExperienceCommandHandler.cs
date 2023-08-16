@@ -32,7 +32,7 @@ namespace MyCV.Application.Experiences.Create;
 
                 await _ExperienceRepository.AddAsync(newExperience);     
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
-                return Unit.Value;
+                return newExperience.Id.Value;
             }
             catch (Exception e)
             {
