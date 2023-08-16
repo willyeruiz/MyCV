@@ -9,6 +9,6 @@ namespace MyCV.Application.Experiences.Create
        string To, 
        string Position, 
        string Description
-    ) : IRequest<ErrorOr<Unit>>;
+    ) : IRequest<ErrorOr<Guid>>;
   
 }

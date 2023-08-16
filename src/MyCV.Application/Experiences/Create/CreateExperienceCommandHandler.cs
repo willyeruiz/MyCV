@@ -5,10 +5,11 @@ using MyCV.Domain.Identificators;
 using MyCV.Domain.Repositories;
 using MyCV.Domain.Entities;
 using ErrorOr;
+using MyCV.Domain.Entities.DomainErrors;
 
 namespace MyCV.Application.Experiences.Create;
 
-    internal sealed class CreateExperienceCommandHandler : IRequestHandler<CreateExperienceCommand, ErrorOr<Unit>>
+    public sealed class CreateExperienceCommandHandler : IRequestHandler<CreateExperienceCommand, ErrorOr<Guid>>
     {
         private readonly IExperienceRepository _ExperienceRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -19,20 +20,27 @@ namespace MyCV.Application.Experiences.Create;
             _unitOfWork = unitOfWork ?? throw new System.ArgumentNullException(nameof(unitOfWork));
         }
 
-        public async Task<ErrorOr<Unit>> Handle(CreateExperienceCommand request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<Guid>> Handle(CreateExperienceCommand request, CancellationToken cancellationToken)
         {
             try
             {
-                var newExperience = new Experience(new ExperienceId(Guid.NewGuid()),
-                                              request.Company,
-                                              request.From,
-                                              request.To,
-                                              request.Position,
-                                              request.Description);
+                if (request.Description.Length < 3)
+                    return Errors.Experience.ShortDescriptionValidation;
+                
+                if (request.Description.Length > 500)
+                    return Errors.Experience.LongDescriptionValidation;
+
+                var newExperience = new Experience(
+                                            new ExperienceId(Guid.NewGuid()),
+                                            request.Company,
+                                            request.From,
+                                            request.To,
+                                            request.Position,
+                                            request.Description);
 
                 await _ExperienceRepository.AddAsync(newExperience);     
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
-                return newExperience.Id.Value;
+                return newExperience.Id.value;
             }
             catch (Exception e)
             {
