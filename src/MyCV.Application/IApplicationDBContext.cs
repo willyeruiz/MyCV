@@ -11,9 +11,6 @@ namespace MyCV.Application.Data
         DbSet<Study> Studies { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
-        
-
-
     }
 
 }

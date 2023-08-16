@@ -15,7 +15,7 @@ namespace MyCV.Infrastructure.Persistence.Repositories
         }   
        
         
-        public async Task<IEnumerable<Skill>?> GetAllAsync() => await _context.Skills.ToListAsync();
+        public async Task<List<Skill>?> GetAllAsync() => await _context.Skills.ToListAsync();
 
         public async Task<Skill?> GetByIdAsync(SkillId id) => await _context.Skills.SingleOrDefaultAsync(s => s.Id == id);
 

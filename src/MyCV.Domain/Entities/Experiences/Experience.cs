@@ -3,7 +3,7 @@ using MyCV.Domain.Identificators;
 
 namespace MyCV.Domain.Entities{
     
-    public sealed class Experience : AggregateRoot
+    public class Experience : AggregateRoot
     {   
         public Experience(){}
 
@@ -17,12 +17,26 @@ namespace MyCV.Domain.Entities{
             Description = description;
         }
         
-        public ExperienceId Id { get; private set; } 
-        public string Company { get; private set; } = string.Empty;
-        public string From { get; private set; } = string.Empty;
-        public string To { get; private set; } = string.Empty;
-        public string Position { get; private set; } = string.Empty;
-        public string Description { get; private set; } = string.Empty;
+        public ExperienceId Id { get;  set; } 
+        public string Company { get;  set; } = string.Empty;
+        public string From { get;  set; } = string.Empty;
+        public string To { get;  set; } = string.Empty;
+        public string Position { get;  set; } = string.Empty;
+        public string Description { get;  set; } = string.Empty;
+        
+    }
+
+     public class ExperienceSimple 
+    {   
+        public ExperienceSimple(){}
+
+      
+        public Guid Id { get;  set; }
+        public string Company { get; set; } = string.Empty;
+        public string From { get; set; } = string.Empty;
+        public string To { get; set; } = string.Empty;
+        public string Position { get; set; } = string.Empty;
+        public string Description { get;  set; } = string.Empty;
         
     }
 

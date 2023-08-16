@@ -5,7 +5,7 @@ namespace MyCV.Domain.Repositories
 {
     public interface IExperienceRepository
     {
-        Task<IEnumerable<Experience>?> GetAllAsync();
+        Task<List<Experience>?> GetAllAsync();
         
         Task<Experience?> GetByIdAsync(ExperienceId id);
         

@@ -26,7 +26,7 @@ namespace MyCV.Application.Experiences.Create;
             {
                 if (request.Description.Length < 3)
                     return Errors.Experience.ShortDescriptionValidation;
-                
+
                 if (request.Description.Length > 500)
                     return Errors.Experience.LongDescriptionValidation;
 
@@ -38,7 +38,7 @@ namespace MyCV.Application.Experiences.Create;
                                             request.Position,
                                             request.Description);
 
-                await _ExperienceRepository.AddAsync(newExperience);     
+                await _ExperienceRepository.AddAsync(newExperience);
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
                 return newExperience.Id.value;
             }
@@ -46,8 +46,5 @@ namespace MyCV.Application.Experiences.Create;
             {
                return Error.Failure("Error while creating new Experience");
             }
-       
         }
-
-  
 }
