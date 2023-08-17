@@ -11,9 +11,9 @@ namespace MyCV.Domain.Repositories
         
         Task AddAsync(Skill skill);
 
-        // Task<Skill> UpdateAsync(Skill skill);
+        Task<Skill> UpdateAsync(Skill skill);
 
-        // Task<bool> DeleteAsync(Skill skill);
+         Task<bool> DeleteAsync(Skill skill);
     }
 }
 

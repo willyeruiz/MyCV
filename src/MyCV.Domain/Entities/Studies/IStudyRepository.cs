@@ -2,13 +2,13 @@ using MyCV.Domain.Identificators;
 using MyCV.Domain.Entities;
 namespace MyCV.Domain.Repositories;
 
-public interface IStudy
+public interface IStudyRepository
 {
-    Task<Study> GetAllAsync(StudyId id);
+    Task<List<Study>?> GetAllAsync();
 
     Task<Study> GetByIdAsync(StudyId id);
     
-    Task<Study> AddAsync(Study study);
+    Task AddAsync(Study study);
 
     Task<Study> UpdateAsync(Study study);
 

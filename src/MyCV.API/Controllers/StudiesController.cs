@@ -1,26 +1,26 @@
 
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using MyCV.Application.Experiences.Create;
-using MyCV.Application.Experiences.GetAll;
+//using MyCV.Application.Studies.Create;
+using MyCV.Application.Studies.GetAll;
 
 namespace MyCV.API.Controllers
 {
     [Route("api/[controller]")]
-    public class ExperiencesController : ApiController
+    public class StudiesController : ApiController
     {
         private readonly ISender _mediator;
 
-        public ExperiencesController(ISender mediator)
+        public StudiesController(ISender mediator)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
         // [HttpPost]
-        // public async Task<IActionResult> Create([FromBody] CreateExperienceCommand command)
+        // public async Task<IActionResult> Create([FromBody] CreateStudyCommand command)
         // {
-        //     var newExperience = await _mediator.Send(command);
-        //         return newExperience.Match(
+        //     var newStudy = await _mediator.Send(command);
+        //         return newStudy.Match(
         //         success => Ok(),
         //         errors => Problem(errors)
         //     );
@@ -29,9 +29,9 @@ namespace MyCV.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll(){
 
-              var listExperienceResult = await _mediator.Send(new GetAllExperiencesQuery());
+              var listStudyResult = await _mediator.Send(new GetAllStudiesQuery());
 
-              return listExperienceResult.Match(
+              return listStudyResult.Match(
                 exp  => Ok(exp),
                 errors => Problem(errors)
               );

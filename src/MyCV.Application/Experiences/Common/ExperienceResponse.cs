@@ -1,6 +1,4 @@
 
-using MyCV.Domain.Identificators;
-
 public record ExperienceResponse(
          Guid Id,
          string Company,

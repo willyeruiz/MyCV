@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -26,6 +26,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{92C699EF-0D9B-48D5-86A5-D64E57941579}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCV.Experiences.UnitTest", "test/UnitTest/MyCV.Experiences.UnitTest/MyCV.Experiences.UnitTest.csproj", "{A9D019D9-F37B-49F1-83CC-65B1A032452E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebClient", "WebClient", "{ED070A65-64B7-4D2C-86D2-D3620683FA5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,7 @@ Global
 		{A9D019D9-F37B-49F1-83CC-65B1A032452E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{ED070A65-64B7-4D2C-86D2-D3620683FA5F} = {3E5ADF57-02A7-4F29-98C3-A9BC1889F0B0}
 		{7C5C03F2-5F32-4FC3-84D1-A9492CDF3876} = {CFBC2F28-F04E-4AA9-B993-9751B32D1504}
 		{CFBC2F28-F04E-4AA9-B993-9751B32D1504} = {3E5ADF57-02A7-4F29-98C3-A9BC1889F0B0}
 		{F1D15BA1-1E82-4E77-999F-27732A7EF855} = {3E5ADF57-02A7-4F29-98C3-A9BC1889F0B0}

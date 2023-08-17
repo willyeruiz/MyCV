@@ -46,13 +46,10 @@ namespace MyCV.Infrastructure.Persistence
             try
             {
                 var existingObjects = await ReadJsonFile();
-              
- 
                 // string jsonData = JsonSerializer.Serialize(data, new JsonConvert. JsonSerializerOptions
                 // {
                 //     WriteIndented = true
                 // });
-                
                 existingObjects.Append(data);
 
                 using (StreamWriter sw = new StreamWriter(_jsonPath))
@@ -64,7 +61,6 @@ namespace MyCV.Infrastructure.Persistence
             catch (Exception e)
             {
                  throw new Exception("Error writting json file: " + e.Message);
-                 
             }
         }
     }

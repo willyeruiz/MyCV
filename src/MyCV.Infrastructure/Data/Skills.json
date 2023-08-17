@@ -1,124 +1,122 @@
-{
-    "Skills":[
+[
         {
-            "id":1,
+            "Id":{"value":"f14681ba-cc31-4d3a-85f1-f32a51707cbc"},
             "Name":"C#",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":2,
+            "Id":{"value":"f641a5d2-ff8b-4521-a297-3de16028a331"},
             "Name":"VB.NET",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":3,
+            "Id":{"value":"3ea18b6e-144f-427f-af67-16d0cb3c30c7"},
             "Name":"SQL Server",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":4,
+            "Id":{"value":"0e31bbac-d20e-420b-878d-cd345d7a4f7a"},
             "Name":"DDD",
             "Level":"Medium",
-            "type":"Programming",
-            "percentage":50
+            "Type":"Programming",
+            "Percentage":50
         },
         {
-            "id":5,
+            "Id":{"value":"0e55e9e0-49d1-4654-974f-d154ac67c710"},
             "Name":"MVC",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":6,
+            "Id":{"value":"a8570f08-7988-4559-b54f-91b50c1bdedf"},
             "Name":"Rest API",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":7,
+            "Id":{"value":"877d2520-41f7-4b7c-8a79-04c84f0af822"},
             "Name":"SCRUM",
             "Level":"Advanced",
-            "type":"Methodology",
-            "percentage":80
+            "Type":"Methodology",
+            "Percentage":80
         },
         {
-            "id":8,
+            "Id":{"value":"43ee01e6-7676-4400-959d-8762856b77a4"},
             "Name":"Clean Code",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":9,
+            "Id":{"value":"8caa5dd1-e9a5-4f0b-81b0-7b968e5f3e7c"},
             "Name":"Angular 5+",
             "Level":"Medium",
-            "type":"Programming",
-            "percentage":90
+            "Type":"Programming",
+            "Percentage":90
         },
         {
-            "id":10,
+            "Id":{"value":"82ec8383-3252-410a-921d-8274e8f50739"},
             "Name":"CSS",
             "Level":"Medium",
-            "type":"Programming",
-            "percentage":60
+            "Type":"Programming",
+            "Percentage":60
         },
         {
-            "id":11,
+            "Id":{"value":"0011536a-2c8c-4c35-b76e-b06ad96e7c01"},
             "Name":"Javascript",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":70
+            "Type":"Programming",
+            "Percentage":70
         },
         {
-            "id":12,
+            "Id":{"value":"9eec3786-baa2-4665-9897-83ead683d13a"},
             "Name":"HTML",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":80
+            "Type":"Programming",
+            "Percentage":80
         },
         {
-            "id":13,
+            "Id":{"value":"001d330b-0d91-4256-9f28-fdd5c6e89875"},
             "Name":"bootstrap",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":70
+            "Type":"Programming",
+            "Percentage":70
         }
         ,
         {
-            "id":14,
+            "Id":{"value":"86350551-1418-40cf-9782-38638339eb75"},
             "Name":"Git",
             "Level":"Advanced",
-            "type":"Programming",
-            "percentage":70
+            "Type":"Programming",
+            "Percentage":70
         },
         {
-            "id":15,
+            "Id":{"value":"de404831-385b-4005-888c-53d4bad84674"},
             "Name":"Trabajo en equipo",
             "Level":"Advanced",
-            "type":"soft",
-            "percentage":90
+            "Type":"soft",
+            "Percentage":90
         },
         {
-            "id":16,
+            "Id":{"value":"3a2a7e8e-4c76-4a46-9a70-40f048319ce2"},
             "Name":"Liderazgo",
             "Level":"Advanced",
-            "type":"soft",
-            "percentage":80
+            "Type":"soft",
+            "Percentage":80
         },
         {
-            "id":17,
+            "Id":{"value":"78c64e42-b88b-4eef-a088-e91b7bebf295"},
             "Name":"Propositivo",
             "Level":"Advanced",
-            "type":"soft",
-            "percentage":80
+            "Type":"soft",
+            "Percentage":80
         }
     ]
-}

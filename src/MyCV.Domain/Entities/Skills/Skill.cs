@@ -16,15 +16,15 @@ public sealed class Skill: AggregateRoot
         Percentage = percentage;
     }
     
-    public SkillId Id { get; private set; } 
+    public SkillId Id { get;  set; } 
 
-    public string Name { get; private set; } = string.Empty;
+    public string Name { get;  set; } = string.Empty;
     
-    public string Level { get; private set; } = string.Empty;
+    public string Level { get;  set; } = string.Empty;
 
-    public string Type { get; private set; } = string.Empty;
+    public string Type { get;  set; } = string.Empty;
 
-    public int Percentage { get; private set; } = 0;
+    public int Percentage { get;  set; } = 0;
             
 }
 

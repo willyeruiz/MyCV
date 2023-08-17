@@ -16,7 +16,7 @@ namespace MyCV.Infrastructure.Persistence
         public ApplicationDBContext(DbContextOptions options, IPublisher publisher) : base(options)
         {
             _publisher = publisher ?? throw new System.ArgumentNullException(nameof(publisher));
-            
+
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -27,7 +27,7 @@ namespace MyCV.Infrastructure.Persistence
                 .SelectMany(e => e.DomainEvents);
 
             var result = await base.SaveChangesAsync(cancellationToken);
-            
+
             foreach (var domainEvent in domainEvents)
             {
                 await _publisher.Publish(domainEvent, cancellationToken);

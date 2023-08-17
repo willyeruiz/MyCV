@@ -7,13 +7,10 @@ namespace MyCV.Infrastructure.Persistence.Repositories
     public class SkillJson: ISkillRepository
     {
         private readonly ApplicationJsonRepository<Skill> JsonRepo ;
-      
         public SkillJson()
         {
-           JsonRepo = new ApplicationJsonRepository<Skill>(".../MyCV.Infrastructure/Data/Skills.json");
-        }   
-       
-        
+           JsonRepo = new ApplicationJsonRepository<Skill>("../MyCV.Infrastructure/Data/Skills.json");
+        }
         public async Task<List<Skill>?> GetAllAsync() => await JsonRepo.ReadJsonFile();
 
        public async Task<Skill?> GetByIdAsync(SkillId id) {
@@ -22,5 +19,16 @@ namespace MyCV.Infrastructure.Persistence.Repositories
         }
 
         public async Task AddAsync(Skill skill) => await JsonRepo.WriteJsonFile(skill);
+
+
+        Task<Skill> ISkillRepository.UpdateAsync(Skill skill)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> ISkillRepository.DeleteAsync(Skill skill)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

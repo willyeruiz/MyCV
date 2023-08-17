@@ -11,9 +11,9 @@ namespace MyCV.Domain.Repositories
         
         Task AddAsync(Experience experience);
 
-        // Task<Experience> UpdateAsync(Experience experience);
+        Task<Experience> UpdateAsync(Experience experience);
 
-        // Task<bool> DeleteAsync(Experience experience);
+        Task<bool> DeleteAsync(Experience experience);
     }
 };
 

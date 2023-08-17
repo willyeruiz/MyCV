@@ -23,6 +23,7 @@ namespace MyCV.Infrastructure
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDBContext>());
             services.AddScoped<IExperienceRepository, ExperienceJson>();
             services.AddScoped<ISkillRepository, SkillJson>();
+            services.AddScoped<IStudyRepository, StudyJson>();
             return services;
         }
     }

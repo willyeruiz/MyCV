@@ -1,25 +1,23 @@
-{
-    "Studies":[
+[
         {
-            "Id":1,
-            "campus":"Universidad del Cauca",
-            "city":"Popayán",
-            "country":"Colombia",
-            "name":"Ingeniería de Sistemas"
+            "Id":{"value":"c7dff8b9-fe78-4166-9cf2-2d4433a9ae6c"},
+            "Campus":"Universidad del Cauca",
+            "City":"Popayán",
+            "Country":"Colombia",
+            "Name":"Ingeniería de Sistemas"
         },
         {
-            "Id":2,
-            "campus":"Universidad EAN",
-            "city":"Bogotá",
-            "country":"Colombia",
-            "name":"Maestria en Innvación"
+            "Id":{"value":"945b4a77-f78a-4323-86aa-069411a7d81a"},
+            "Campus":"Universidad EAN",
+            "City":"Bogotá",
+            "Country":"Colombia",
+            "Name":"Maestria en Innvación"
         },
         {
-            "Id":3,
-            "campus":"Universidad de Nebrija",
-            "city":"Madrid",
-            "country":"España",
-            "name":"MBA en administración de empresas de tecnología"
+            "Id":{"value":"1bc7ad59-0868-4d3e-8af2-17d998e71c29"},
+            "Campus":"Universidad de Nebrija",
+            "City":"Madrid",
+            "Country":"España",
+            "Name":"MBA en administración de empresas de tecnología"
         }
     ]
-}
