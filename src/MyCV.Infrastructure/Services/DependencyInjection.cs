@@ -24,6 +24,7 @@ namespace MyCV.Infrastructure
             services.AddScoped<IExperienceRepository, ExperienceJson>();
             services.AddScoped<ISkillRepository, SkillJson>();
             services.AddScoped<IStudyRepository, StudyJson>();
+            services.AddScoped<IProfileRepository, ProfileJson>();
             return services;
         }
     }
