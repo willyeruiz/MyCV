@@ -13,7 +13,7 @@ namespace MyCV.Domain.Entities.DomainErrors
 
             public static Error LongDescriptionValidation => Error.Validation("Experience.Description","Description is too long");
 
-            public static Error NothingToReturn => Error.NotFound("Experience.NotFound","There aren't data to return");
+            public static Error NothingToReturn => Error.NotFound("Experience.NotFound","There aren't experience data to return");
             
             public static Error CreatingError => Error.NotFound("Experience.Creating","Error while creating new Experience");
         }
