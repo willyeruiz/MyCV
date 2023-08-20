@@ -28,7 +28,7 @@ public class GetAllProfilesQueryHandlerUnitTest{
         //Assert: Verifica los resultados
         result.IsError.Should().BeTrue();
         result.FirstError.Type.Should().Be(ErrorType.NotFound);
-        result.FirstError.Description.Should().Be(Errors.Experience.NothingToReturn.Description);
+        result.FirstError.Description.Should().Be(Errors.Profile.NothingToReturn.Description);
     }  
 
 }
