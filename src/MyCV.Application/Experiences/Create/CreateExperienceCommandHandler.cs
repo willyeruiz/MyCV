@@ -44,7 +44,7 @@ namespace MyCV.Application.Experiences.Create;
             }
             catch (Exception e)
             {
-               return Error.Failure("Error while creating new Experience");
+               return Error.Failure($"Error while creating new Experience, Details: {e.Message}");
             }
         }
 }
