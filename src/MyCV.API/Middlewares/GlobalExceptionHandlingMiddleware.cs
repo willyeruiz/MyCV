@@ -9,20 +9,20 @@ namespace MyCV.API.Middlewares
         private readonly ILogger<GlobalExceptionHandlingMiddleware> _logger;
 
         public GlobalExceptionHandlingMiddleware(ILogger<GlobalExceptionHandlingMiddleware> logger) => _logger = logger;
-        
+
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             try
             {
                 await next(context);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
                 ProblemDetails problem = new ()
-                { 
+                {
                     Title = "Server Error",
                     Status = (int)HttpStatusCode.InternalServerError,
                     Detail = "An internal error has occurred.",
@@ -32,10 +32,7 @@ namespace MyCV.API.Middlewares
                 string json = JsonSerializer.Serialize(problem);
                 context.Response.ContentType = "application/json";
                 await context.Response.WriteAsync(json);
-
-
             }
-            
         }
     }
 }

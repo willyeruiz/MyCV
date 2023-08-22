@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 	app.UseSwagger();
 	app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyCV.Api v1"));
-	//For now I will work witoout DataBase, uncomment this line to create DataBase
+	//For now, I will work without DataBase, uncomment this line to create DataBase
 	//app.ApplyMigrations(); 
 	//Commands to run migrations:
 	//dotnet ef migrations add InitialCreate --project MyCV.Infrastructure --startup-project MyCV.API -o Persistence/Migrations
@@ -28,6 +28,13 @@ if (app.Environment.IsDevelopment())
 app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.UseRouting();
+
+ app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
+
 app.UseAuthorization();
 
 app.UseMiddleware<GlobalExceptionHandlingMiddleware>();

@@ -13,6 +13,7 @@ namespace MyCV.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration ){
             services.AddPersistence(configuration);
+            
             return services;
         }
         

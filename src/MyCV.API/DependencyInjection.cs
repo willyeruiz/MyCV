@@ -6,6 +6,7 @@ namespace MyCV.API
     {
           public static IServiceCollection AddPresentation(this IServiceCollection services){
             
+            services.AddCors();
             // Add services to the container.
             services.AddControllers();
 
