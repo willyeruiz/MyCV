@@ -1,1 +1,9 @@
-<p>experiences works!</p>
+<div>
+<h2>Experiencia Laboral</h2>
+<ul>
+  <li *ngFor="let item of data">
+    <h3>{{item.company}} ({{item.from}} - {{item.to}})</h3>
+    <h5>{{item.position}}</h5><p>{{item.description}}</p>
+  </li>
+</ul>
+</div>
