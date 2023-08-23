@@ -18,7 +18,6 @@ export class ExperiencesComponent {
   SetData(){
     this.apiService.getdata().subscribe(data => {
       this.data = data;
-      console.log(this.data);
     })
   }
 }

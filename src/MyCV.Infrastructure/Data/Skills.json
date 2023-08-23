@@ -4,35 +4,35 @@
             "Name":"C#",
             "Level":"Advanced",
             "Type":"Programming",
-            "Percentage":90
+            "Percentage":80
         },
         {
             "Id":{"value":"f641a5d2-ff8b-4521-a297-3de16028a331"},
             "Name":"VB.NET",
             "Level":"Advanced",
             "Type":"Programming",
-            "Percentage":90
+            "Percentage":20
         },
         {
             "Id":{"value":"3ea18b6e-144f-427f-af67-16d0cb3c30c7"},
             "Name":"SQL Server",
             "Level":"Advanced",
             "Type":"Programming",
-            "Percentage":90
+            "Percentage":100
         },
         {
             "Id":{"value":"0e31bbac-d20e-420b-878d-cd345d7a4f7a"},
             "Name":"DDD",
             "Level":"Medium",
             "Type":"Programming",
-            "Percentage":50
+            "Percentage":30
         },
         {
             "Id":{"value":"0e55e9e0-49d1-4654-974f-d154ac67c710"},
             "Name":"MVC",
             "Level":"Advanced",
             "Type":"Programming",
-            "Percentage":90
+            "Percentage":70
         },
         {
             "Id":{"value":"a8570f08-7988-4559-b54f-91b50c1bdedf"},
@@ -56,8 +56,15 @@
             "Percentage":90
         },
         {
+            "Id":{"value":"43ee01e6-7676-4400-959d-8762856b79a4"},
+            "Name":"SOLID Principles",
+            "Level":"Advanced",
+            "Type":"Programming",
+            "Percentage":90
+        },
+        {
             "Id":{"value":"8caa5dd1-e9a5-4f0b-81b0-7b968e5f3e7c"},
-            "Name":"Angular 5+",
+            "Name":"Angular 7+",
             "Level":"Medium",
             "Type":"Programming",
             "Percentage":90

@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { GlobalConstants } from 'src/app/common/globalConstants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
-  private urlAPI = 'https://localhost:7033/api/Experiences';
+  private urlAPI = GlobalConstants.appURL +'/Experiences';
 
   constructor(private http: HttpClient) {}
 

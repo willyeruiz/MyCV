@@ -1,1 +1,9 @@
-<p>profile works!</p>
+<div>
+  <h2>Perfil</h2>
+
+    <div *ngFor="let item of data">
+      <h3>{{item.title | uppercase }}</h3>
+      <p>{{item.description}}</p>
+    </div>
+
+  </div>

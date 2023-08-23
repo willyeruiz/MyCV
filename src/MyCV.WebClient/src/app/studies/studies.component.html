@@ -1,1 +1,8 @@
-<p>studies works!</p>
+<div>
+  <h2>Studies Skills</h2>
+  <div *ngFor="let item of data">
+    <h3>{{item.name | uppercase }}</h3>
+    <h4>{{item.campus}} </h4>
+    <h4>{{item.city}} ({{item.country }}) </h4>
+  </div>
+</div>

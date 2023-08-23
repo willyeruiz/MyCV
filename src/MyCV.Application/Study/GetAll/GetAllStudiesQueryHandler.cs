@@ -30,11 +30,11 @@ public sealed class GetAllStudiesQueryHandler: IRequestHandler<GetAllStudiesQuer
 
             return listStudies.Select(e => new StudyResponse(
                 e.Id.value,
-                e.Name,
-                e.Country,
+                e.Campus,
                 e.City,
-                e.Campus
-                )).ToList();
+                e.Country,
+               e.Name
+            )).ToList();
         }
         catch (Exception e)
         {
