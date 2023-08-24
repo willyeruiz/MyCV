@@ -1,9 +1,30 @@
-<div>
-  <h2>Perfil</h2>
 
-    <div *ngFor="let item of data">
-      <h3>{{item.title | uppercase }}</h3>
-      <p>{{item.description}}</p>
+  <div class="grid grid-nogutter surface-section text-800">
+    <div *ngFor="let item of data" class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+        <section>
+            <span class="block text-6xl font-bold mb-1">Ing. William Ruiz Gonzalez</span>
+            <div class="text-4xl text-primary font-bold mb-3">{{item.title}}</div>
+            <p class="mt-0 mb-4 text-700 line-height-3">{{item.description}}</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised"></button>
+            <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button> -->
+            <div>
+              <img src="assets/images/Csharp.png" height="85px" style="margin-right: 30px;">
+              <img src="assets/images/NET_Core.png" height="80px" style="margin-right: 50px;">
+              <img src="assets/images/Angular.png" height="95px" style="margin-right: 50px;">
+              <img src="assets/images/sqlserver.png" height="95px">
+          </div>
+
+        </section>
+
+
+
     </div>
-
+    <div class="col-12 md:col-6 overflow-hidden">
+        <img src="assets/images/Image1.jpeg" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+    </div>
   </div>

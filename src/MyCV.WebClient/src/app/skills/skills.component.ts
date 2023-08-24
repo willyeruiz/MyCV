@@ -17,6 +17,7 @@ export class SkillsComponent {
 
   SetData(){
     this.apiService.getdata().subscribe(data => {
+      console.log(data);
       this.data = data;
     })
   }
