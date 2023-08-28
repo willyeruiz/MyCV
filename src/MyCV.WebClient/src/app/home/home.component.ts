@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  downloadCV(){
+    let link= document.createElement("a");
+    link.download = "CV William Ruiz.pdf";
+    link.href = "assets/documents/CV William Ruiz.pdf"
+    link.click();
+
+  }
 }

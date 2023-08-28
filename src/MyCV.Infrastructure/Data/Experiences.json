@@ -1,7 +1,7 @@
 [
     {   
         "Id":{ "value":"a5b15af5-37a3-4792-bccd-584299058555"},    
-        "Company": "SONDA DE COLOMBIA",
+        "Company": "Sonda de Colombia",
         "From": "Abril 2010",
         "To": "Diciembre 2012",
         "Position": "Desarrollador Jr.",
@@ -9,7 +9,7 @@
     },
     {   
         "Id":{ "value":"03846734-abd4-49e2-8b6f-4713c3024cd7"},
-        "Company": "BANCO FALABELLA",
+        "Company": "Banco Falabella",
         "From": "Diciembre 2012",
         "To": "Enero 2017",
         "Position": "Desarrollador Sr.",
@@ -26,7 +26,7 @@
     },
     {   
         "Id":{ "value":"b03ea127-4e67-4ce5-a117-ca5f97ed2794"},
-        "Company": "FREELANCER",
+        "Company": "Freelancer",
         "From": "Septiembre 2018",
         "To": "Marzo 2019",
         "Position": "Desarrollador Sr.",
@@ -34,7 +34,7 @@
     },
     {   
         "Id":{ "value":"824cd71f-ea63-4e64-863f-160cd1cdfe85"},
-        "Company": "AMADEUS",
+        "Company": "Amadeus",
         "From": "Abril 2019",
         "To": "Junio 2020",
         "Position": "Consultor TI",

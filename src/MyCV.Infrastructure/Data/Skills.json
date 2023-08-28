@@ -93,7 +93,7 @@
         {
             "Id":{"value":"001d330b-0d91-4256-9f28-fdd5c6e89875"},
             "Name":"bootstrap",
-            "Level":"Advanced",
+            "Level":"Medium",
             "Type":"Programming",
             "Percentage":70
         }
